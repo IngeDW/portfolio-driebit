@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i|Playfair+Display:400,400i,700,700i,900,900i|Roboto+Slab:400,700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900,900i&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,700|Playfair+Display:400,900&display=swap');
+
+*,
+:before,
+:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+    transition-delay: 150ms;
+    padding: 0;
+    line-height: 1.4em;
+}
+
+
+body { 
+    overflow-x: hidden;
+}
+
+h1 {
+    font-weight: 600;
+    padding: 0em 0.6em;
+    text-align: center;
+    z-index: 10;
+    margin-top: 1em;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2.2em;
+    color: #1e1e3a;
+
+}
+
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    font-weight: 200;
+    font-weight: 700;
+    line-height: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    color: #1e1e3a;
+}
+
+
+h3 {
+    font-weight: 600;
+    padding: 0em 0.6em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #8B4513;
+    margin-top: -0.5em;
+    margin-bottom: 3em;
+
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 1.3em;
+    text-align: left;
+    padding: 0 0.8em 0;
+    display: flex;
+}
+
+p {
+    color: #333;
+    padding: 0 1em;
+    line-height: 1.6;
+    font-size: 0.9em;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    max-width: 70rem;
+    
+}
+
+
+.inleiding {
+    width: 60vw;
+    margin: auto;
+    margin-top: -1em;
+    margin-bottom: 3em;
+    text-align: center;
+}
+
+h5 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+h6 {
+    font-size: 1em;
+    margin: 0.8em 0 1em;
+    font-weight: 400;
+}
+
+
+h2 p {
+    text-align: center;
+}
+
+.bekijkmeer {
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #1e1e3a;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #e4e4e4;
+    display: block;
+    width: 100%;
+    margin: auto;
+    margin-top: 1.5em;
+    padding: 2em;
+    margin-bottom: none;
+}
+
+.bekijkmeer:hover {
+    font-weight: 600;
+}
+
+
+/*****************************
+           HEADER
+******************************/
+
+.fotoik {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 5vh;
+    max-width: 80vw;
+    z-index: 6px;
+
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+@media (min-width: 650px) {
+    .fotoik {
+        width: 35vw;
+        top: 5%;
+    }
+}
+
+
+.textheader {
+    z-index: 10;
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    text-transform: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+
+header {
+    height: 100vh;
+    width: 100vw;
+    padding: 0 2em 0 2em;
+}
+
+
+
+#cooldown {
+    background-image: url(../images/cooldown-vlekw);
+    min-height: 2.5em;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*****************************
+           BODY
+******************************/
+
+
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    width: 100vw;
+    background-color: #f1f1f1;
+}
+
+main {
+    padding: 2em;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+
+}
+
+section h3,
+h2,
+p {
+    grid-column: 1 / -1;
+}
+
+
+
+article {
+    background-color: white;
+    padding: 0em 0em;
+    margin: 1em;
+    text-align: center;
+    border-radius: 0px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+article:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.experimenten {
+    padding: 0;
+
+}
+.experimenten:hover {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+
+.experimenten img {
+    border-radius: 0px;
+    transition: transform 0.25s ease;
+  cursor: zoom-in;
+
+}
+
+.experimenten img:active { -webkit-transform: scale(2);
+  transform: scale(2);
+  cursor: zoom-out;
+}
+
+/*Bron: https://codepen.io/sdthornton/pen/wBZdXq?editors=1100*/
+
+article img {
+    width: 100%;
+    border-radius: 0px ;
+
+}
+
+
+.projectbox {
+    max-width: 60vw;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projectimg {
+    max-width: 60vw;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1), 0 5px 5px rgba(0, 0, 0, 0.1);
+    margin: 2em 0 2em 0;
+}
+
+
+.projectimg2 {
+    max-width: 336px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1), 0 5px 5px rgba(0, 0, 0, 0.1);
+    margin: 2em 0 0em 0;
+}
+.projectbox p {
+    margin: 0;
+    padding: 0;
+}
+
+
+@media (min-width: 500px) {
+    .projectbox {
+    max-width: 50vw;
+
+}
+
+.projectimg {
+    max-width: 50vw;
+
+}
+}
+
+
+.projectimg-zonderschaduw {
+    box-shadow: none;
+        max-width: 50vw;
+
+}
+
+/*****************************
+    OVER MIJ SECTION
+******************************/
+
+aside {
+    background-color: #8B4513;
+    color: white;
+    padding: 5em 0;
+    margin: 6em 0;
+    position: relative;
+}
+
+aside p {
+    color: white;
+    width: 60vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+}
+
+#overmijfoto {
+    display: inline;
+    max-width: 300px;
+    position: absolute;
+    z-index: 10;
+    float: left;
+    
+}
+
+
+
+#blauwvlak {
+    width: 400px;
+    position: absolute;
+    z-index: 10;
+    top: -175px;
+    left: -20px;
+}
+
+#witvlak {
+    width: 100px;
+    position: absolute;
+    z-index: 10;
+    bottom: -30px;
+    right: 90px; }
+
+/*****************************
+     2de BLOK OVER MIJ
+******************************/
+
+#container {
+    background-color: #8B4513;
+    color: white;
+    padding: 5em 0;
+    margin: 6em 0;
+    display: flex;
+    flex-wrap: wrap;
+        align-content: space-between;
+
+}
+
+#mijnfoto {
+    max-width: 300px;
+    margin: 0px 30px;
+}
+
+#item2 p {
+    color: white;
+    width: 50%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#item2 h2 {
+  width: 50%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*****************************
+           FOOTER
+******************************/
+
+
+
+footer {
+    background-image: url(../images/footer-img.png);
+    background-color: #1e1e3a;
+    min-height: 2em;
+    background-position: center bottom;
+    background-size: contain;
+
+    background-repeat: no-repeat;
+    margin: 0;
+    margin-top: 3em;
+    padding: 0;
+}
+footer p {
+    color: white;
+    width: 60vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+}
+
+#footer {
+    margin-bottom: 0;
+    background-color: #1e1e3a;
+
+}
+
+#witvlak2 {
+    width: 125px;
+    position: absolute;
+    z-index: 10;
+    top: 10px;
+    left: 25%; 
+    transform: rotate(180deg);
+}
+
+
+#bruinvlak {
+    width: 50px;
+    position: absolute;
+    z-index: 10;
+    top: -40px;
+    right: 30%; 
+    transform: rotate(180deg);
+}
+
+.mail{
+    color: white;
+    text-transform: none;
+    line-height: 1.6;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+      text-decoration: none;
+}
+
+.mail:hover {
+    color: #8B4513;
+  
+}
+
+#footer h2 {
+    color: white;
+}
+
+button {
+    position: fixed;
+    background-color:  #1e1e3a;
+    color:white;
+    border: 1px solid #1e1e3a;
+    padding: 1em 2em;
+    left: 0px;
+    top: 85vh;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+}
